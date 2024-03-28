@@ -25,6 +25,9 @@ git clone https://github.com/tatsu-lab/alpaca_eval.git
 cd alpaca_eval/
 pip install -e .
 cd ..
+
+# install specific sklearn version
+pip install scikit-learn=1.4.0
 ```
 
 ### OpenRouter API Key
@@ -54,6 +57,10 @@ openai.api_key = OPENROUTER_API_KEY
 ```
 
 **Note**: DSW will only save `ipynb` files after shutting down. So you should better save previous scripts in a notebook. We have already provided an example in `run.ipynb` for your reference.
+
+**API Rate Limitation**:
+- Free version of Mistral API has rate limit of `10 req/min`. All you can do is wait.
+- You can also try: [Groq](https://console.groq.com/docs/models) to get free model access; it is also "openai-compatible"; and have rate limit of `30 req/min` for `Mixtral-8x7B`.
 
 ## Assignment Details
 
@@ -122,19 +129,5 @@ alpaca_eval evaluate_from_model \
   --model_configs 'mini_lima' \
   --annotators_config 'chatgpt'
 ```
-
-Also, If you want to use `Mistral-Instruct-v0.2` as an evaluator, you should first finish the OpenRouter setup, and then run the following script:
-
-```bash
-cp -r mistral_eval alpaca_eval/src/alpaca_eval/evaluators_configs/
-
-alpaca_eval evaluate_from_model \
-  --model_configs 'mini_lima' \
-  --annotators_config 'mistral_eval'
-```
-
-**Note**: 
-- Free version of mistral API has rate limit `10 req/min`. All you can do is to wait.
-- You can also try: [Groq](https://api.groq.com/openai/v1) to get free model access; it is also "openai-compatible"; and have `30 req/min` for `Mixtral-8x7B`.
 
 Hopefully you can get a csv showing the performance.
