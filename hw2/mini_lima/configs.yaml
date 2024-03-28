@@ -1,0 +1,13 @@
+mini_lima:
+  prompt_template: "mini_lima/prompt.txt"
+  fn_completions: "huggingface_local_completions"
+  completions_kwargs:
+    model_name: "/mnt/workspace/modelscope_hub/qwen/Qwen1___5-0___5B-Chat"
+    model_kwargs:
+      torch_dtype: "bfloat16"
+      trust_remote_code: True
+    temperature: 0.0
+    do_sample: True
+    max_new_tokens: 2048
+    top_p: 1.0
+  pretty_name: "Mini Lima"
