@@ -131,3 +131,7 @@ alpaca_eval evaluate_from_model \
 ```
 
 Hopefully you can get a csv showing the performance.
+
+
+## Acknowledgement
+This assignment is based on the awesome [LLaMAFactory](https://github.com/hiyouga/LLaMA-Factory) and [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval). We thank the authors and maintainers for their great contributions to LLM alignment.
