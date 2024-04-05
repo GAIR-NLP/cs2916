@@ -27,7 +27,7 @@ pip install -e .
 cd ..
 
 # install specific sklearn version
-pip install scikit-learn=1.4.0
+pip install scikit-learn==1.4.0
 ```
 
 ### OpenRouter API Key
