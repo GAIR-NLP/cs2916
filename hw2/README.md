@@ -132,6 +132,10 @@ alpaca_eval evaluate_from_model \
 
 Hopefully you can get a csv showing the performance.
 
+### Report Template
+
+We encourage you to use $\LaTeX$ to generate your report pdf file. A reference template is available [here](https://www.overleaf.com/read/crtcwgxzjskr#7213b2).
+
 
 ## Acknowledgement
 This assignment is based on the awesome [LLaMAFactory](https://github.com/hiyouga/LLaMA-Factory) and [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval). We thank the authors and maintainers for their great contributions to LLM alignment.
