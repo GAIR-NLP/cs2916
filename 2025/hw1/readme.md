@@ -68,9 +68,11 @@ RL会在训练中在线的评估模型的性能，sft则需要使用`bash script
 
 ## 计算资源估计
 均在4*H800上测试。
+
 Short CoT SFT：
 - 训练：～5min
 - 评估：～5min
+
 Long CoT SFT:
 - 训练: ～30min
 - 评估：~20min
