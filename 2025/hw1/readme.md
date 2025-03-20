@@ -1,4 +1,4 @@
-# Mini RL Scaling Assignments
+# Minimum Implementation of O1
 # 作业目的
 了解大模型强化学习算法的基本原理
 掌握大模型强化学习训练的代码框架及其使用（包括多卡训练、超参数的设置、训练过程的监控等）
